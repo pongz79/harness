@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/media', 'MediaController@show');
+Route::post('/media', 'MediaController@create');
+Route::patch('/media', 'MediaController@update');
+Route::delete('/media', 'MediaController@delete');
